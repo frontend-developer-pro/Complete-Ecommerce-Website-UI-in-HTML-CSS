@@ -1,0 +1,152 @@
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .arrivals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .arrival-card.large {
+        grid-column: span 2;
+    }
+    
+    .arrival-card.medium {
+        grid-column: span 1;
+    }
+    
+    .arrival-card.small {
+        grid-column: span 1;
+    }
+    
+    .services-section {
+        flex-wrap: wrap;
+    }
+    
+    .service-item {
+        flex: 0 0 calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-arrows {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .countdown-container {
+        margin: 1rem 0;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-controls {
+        position: static;
+        margin-top: 15px;
+        margin-left: 14px;
+    }
+
+    .products-container {
+        gap: 15px;
+    }
+
+    .product-card {
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    .product-image-container {
+        height: 200px;
+    }
+
+    .arrivals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .arrival-card.large,
+    .arrival-card.medium,
+    .arrival-card.small {
+        grid-column: span 1;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .services-section {
+        flex-direction: column;
+    }
+    
+    .service-item {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .products-section {
+        padding: 20px 15px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .product-card {
+        min-width: 180px;
+        max-width: 180px;
+    }
+
+    .product-image-container {
+        height: 180px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .rating i {
+        font-size: 12px;
+    }
+
+    .review-count {
+        font-size: 12px;
+    }
+}

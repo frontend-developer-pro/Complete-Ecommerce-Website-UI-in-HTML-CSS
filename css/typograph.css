@@ -1,0 +1,27 @@
+:root {
+    --white-c: #FAFAFA;
+    --black-c: #000000;
+    --orange-c: #DB4444;
+    --font-p: "Poppins", sans-serif;
+}
+
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-s-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    align-items: center;
+}
+
+.cursor-p {
+    cursor: pointer;
+}
